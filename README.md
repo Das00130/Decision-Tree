@@ -10,7 +10,7 @@ Tasks Performed :
 
 ## Attribute information
 
- #  Attribute                       Domain
+   Attribute                       Domain
    -- -----------------------------------------
    1. Sample code number            100003
    2. Clump Thickness               1 - 10
@@ -111,3 +111,10 @@ graph.write_png("my_tree.png")
 plt.show()
 ```
 ![png](images/my_tree.PNG)
+
+## About Used Dataset(Reference)
+   This breast cancer databases was obtained from the University of Wisconsin
+   Hospitals, Madison from Dr. William H. Wolberg. 
+   Title: Wisconsin Breast Cancer Database (January 8, 1991)
+   
+   Link : https://archive.ics.uci.edu/ml/datasets/Breast+Cancer+Wisconsin+%28Original%29

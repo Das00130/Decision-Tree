@@ -1,3 +1,10 @@
+
+"""
+Created on Tue Jan 23 23:06:37 2018
+
+@author: DAMI
+"""
+
 from sklearn.externals.six import StringIO  
 from sklearn.cross_validation import train_test_split
 from sklearn.tree import DecisionTreeClassifier
