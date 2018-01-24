@@ -1,33 +1,3 @@
-# Decision Tree
-
-In this project decision tree is used to predict benign or malignant for breast cancer.
-
-Tasks Performed :
-1. Preparation of Database
-2. Splitting the data into training and test sets with the ratio of 80 and 20 respectively
-3. Calculating the processing time and accuracy of the sets 
-4. Getting the important features and plotting them
-
-## Attribute information
-
- #  Attribute                       Domain
-   -- -----------------------------------------
-   1. Sample code number            100003
-   2. Clump Thickness               1 - 10
-   3. Uniformity of Cell Size       1 - 10
-   4. Uniformity of Cell Shape      1 - 10
-   5. Marginal Adhesion             1 - 10
-   6. Single Epithelial Cell Size   1 - 10
-   7. Bare Nuclei                   1 - 10
-   8. Bland Chromatin               1 - 10
-   9. Normal Nucleoli               1 - 10
-  10. Mitoses                       1 - 10
-  11. Class:                        (2 for benign, 4 for malignant)
-  
-##Step by Step
-
-```python
-
 from sklearn.externals.six import StringIO  
 from sklearn.cross_validation import train_test_split
 from sklearn.tree import DecisionTreeClassifier
@@ -46,11 +16,7 @@ d=df2.columns[:-1]
 
 print("The Dataset before preprocessing: %s instances and %s attributes"% (df.shape[0],df.shape[1]))
 print("The Dataset after preprocessing: %s instances and %s attributes"% (df2.shape[0],df2.shape[1]))
-```
 
-![png](images/instances.PNG)
-
-```python
 '''Training the data and calculate the process time '''
 
 X = np.array(df2.drop(['class_type'],1))
@@ -69,11 +35,7 @@ print('Accuracy of Decision Tree classifier on training set: {:.2f}'
      .format(clf_gini.score(X_train, y_train)))
 print('Accuracy of Decision Tree classifier on test set: {:.2f}'
     .format(clf_gini.score(X_test, y_test))) 
-```
 
-![png](images/accuracy.PNG)
-
-```python
 '''Listing important features and remove the ones with 0 importance'''
 
 feature = list(zip(map(lambda x: round(x, 4), clf_gini.feature_importances_), d))
@@ -95,11 +57,7 @@ plt.yticks(length, imp_names)
 plt.ylabel('Feature name')
 plt.xlabel('Feature importance')
 plt.show()
-```
 
-![png](images/feature_plot.PNG)
-
-```python
 '''Plotting the decision tree with max depth = 3'''
 
 dot_data=StringIO()
@@ -109,5 +67,3 @@ tree.export_graphviz(clf_gini, out_file = dot_data,
 graph = pydotplus.graph_from_dot_data(dot_data.getvalue())
 graph.write_png("my_tree.png")
 plt.show()
-```
-![png](images/my_tree.PNG)
