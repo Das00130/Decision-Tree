@@ -7,10 +7,11 @@ Tasks Performed :
 2. Splitting the data into training and test sets with the ratio of 80 and 20 respectively
 3. Calculating the processing time and accuracy of the sets 
 4. Getting the important features and plotting them
+5. Generating Decision Tree in png
 
 ## Attribute information
 
-   Attribute                       Domain
+   Attribute  and                     Domain
    -- -----------------------------------------
    1. Sample code number            100003
    2. Clump Thickness               1 - 10
@@ -110,7 +111,7 @@ graph = pydotplus.graph_from_dot_data(dot_data.getvalue())
 graph.write_png("my_tree.png")
 plt.show()
 ```
-![png](images/my_tree.PNG)
+![png](images/my_tree.png)
 
 ## About Used Dataset(Reference)
    This breast cancer databases was obtained from the University of Wisconsin
