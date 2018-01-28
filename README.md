@@ -1,8 +1,6 @@
-# Decision Tree
-
 In this project, a decision tree is used to predict the attribute 'benign' or 'malignant' for a breast cancer.
 
-Tasks Performed :
+## Tasks Performed :
 1. Pre-processing of the dataset
 2. Splitting the data into training and test sets with a ratio of 80 and 20 respectively
 3. Calculating the processing time and accuracy for the sets 
@@ -11,18 +9,7 @@ Tasks Performed :
 
 ## Attribute information
 
-Attribute  and                     Domain
-1. Sample code number:            100003
-2. Clump Thickness:               1 - 10
-3. Uniformity of Cell Size:       1 - 10
-4. Uniformity of Cell Shape:      1 - 10
-5. Marginal Adhesion:             1 - 10
-6. Single Epithelial Cell Size:   1 - 10
-7. Bare Nuclei:                   1 - 10
-8. Bland Chromatin:               1 - 10
-9. Normal Nucleoli:               1 - 10
-10. Mitoses:                       1 - 10
-11. Class:(2 for benign, 4 for malignant)
+
   
 ## Step by Step
 
@@ -118,8 +105,21 @@ plt.show()
 ![png](images/my_tree.png)
 
 ## About Used Dataset (Reference)
-   This breast cancer databases was obtained from the University of Wisconsin
-   Hospitals, Madison from Dr. William H. Wolberg. 
-   Title: Wisconsin Breast Cancer Database (January 8, 1991)
+
+Attributes  
+1. Sample code number:            100003
+2. Clump Thickness:               1 - 10
+3. Uniformity of Cell Size:       1 - 10
+4. Uniformity of Cell Shape:      1 - 10
+5. Marginal Adhesion:             1 - 10
+6. Single Epithelial Cell Size:   1 - 10
+7. Bare Nuclei:                   1 - 10
+8. Bland Chromatin:               1 - 10
+9. Normal Nucleoli:               1 - 10
+10. Mitoses:                       1 - 10
+11. Class:(2 for benign, 4 for malignant)
+
+This breast cancer databases was obtained from the University of Wisconsin Hospitals, Madison from Dr. William H. Wolberg. Title: Wisconsin Breast Cancer Database (January 8, 1991)
    
-   Link : https://archive.ics.uci.edu/ml/datasets/Breast+Cancer+Wisconsin+%28Original%29
+Link : https://archive.ics.uci.edu/ml/datasets/Breast+Cancer+Wisconsin+%28Original%29
+   
