@@ -1,31 +1,30 @@
 # Decision Tree
 
-In this project decision tree is used to predict benign or malignant for breast cancer.
+In this project, a decision tree is used to predict the attribute 'benign' or 'malignant' for a breast cancer.
 
 Tasks Performed :
-1. Preparation of Database
-2. Splitting the data into training and test sets with the ratio of 80 and 20 respectively
-3. Calculating the processing time and accuracy of the sets 
-4. Getting the important features and plotting them
-5. Generating Decision Tree in png
+1. Pre-processing of the dataset
+2. Splitting the data into training and test sets with a ratio of 80 and 20 respectively
+3. Calculating the processing time and accuracy for the sets 
+4. Retrieving the important features and plotting them (see below)
+5. Generating the decision Tree in png (see below)
 
 ## Attribute information
 
-   Attribute  and                     Domain
-   -- -----------------------------------------
-   1. Sample code number            100003
-   2. Clump Thickness               1 - 10
-   3. Uniformity of Cell Size       1 - 10
-   4. Uniformity of Cell Shape      1 - 10
-   5. Marginal Adhesion             1 - 10
-   6. Single Epithelial Cell Size   1 - 10
-   7. Bare Nuclei                   1 - 10
-   8. Bland Chromatin               1 - 10
-   9. Normal Nucleoli               1 - 10
-  10. Mitoses                       1 - 10
-  11. Class:                        (2 for benign, 4 for malignant)
+Attribute  and                     Domain
+1. Sample code number:            100003
+2. Clump Thickness:               1 - 10
+3. Uniformity of Cell Size:       1 - 10
+4. Uniformity of Cell Shape:      1 - 10
+5. Marginal Adhesion:             1 - 10
+6. Single Epithelial Cell Size:   1 - 10
+7. Bare Nuclei:                   1 - 10
+8. Bland Chromatin:               1 - 10
+9. Normal Nucleoli:               1 - 10
+10. Mitoses:                       1 - 10
+11. Class:(2 for benign, 4 for malignant)
   
-##Step by Step
+## Step by Step
 
 ```python
 
@@ -49,6 +48,7 @@ print("The Dataset before preprocessing: %s instances and %s attributes"% (df.sh
 print("The Dataset after preprocessing: %s instances and %s attributes"% (df2.shape[0],df2.shape[1]))
 ```
 
+#### Output: Instances before and after pre-processing
 ![png](images/instances.PNG)
 
 ```python
@@ -72,6 +72,7 @@ print('Accuracy of Decision Tree classifier on test set: {:.2f}'
     .format(clf_gini.score(X_test, y_test))) 
 ```
 
+#### Output: Processing time and accuracy for the training and the test sets
 ![png](images/accuracy.PNG)
 
 ```python
@@ -98,6 +99,7 @@ plt.xlabel('Feature importance')
 plt.show()
 ```
 
+#### Output: Feature importances
 ![png](images/feature_plot.PNG)
 
 ```python
@@ -111,9 +113,11 @@ graph = pydotplus.graph_from_dot_data(dot_data.getvalue())
 graph.write_png("my_tree.png")
 plt.show()
 ```
+
+#### Output: Decision tree
 ![png](images/my_tree.png)
 
-## About Used Dataset(Reference)
+## About Used Dataset (Reference)
    This breast cancer databases was obtained from the University of Wisconsin
    Hospitals, Madison from Dr. William H. Wolberg. 
    Title: Wisconsin Breast Cancer Database (January 8, 1991)
