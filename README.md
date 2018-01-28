@@ -1,4 +1,4 @@
-In this project, a decision tree is used to predict the attribute 'benign' or 'malignant' for a breast cancer.
+In this project, a decision tree is used to predict the attribute 'benign' or 'malignant' for a possible case of breast cancer.
 
 ## Tasks Performed :
 1. Pre-processing of the dataset
@@ -7,10 +7,6 @@ In this project, a decision tree is used to predict the attribute 'benign' or 'm
 4. Retrieving the important features and plotting them (see below)
 5. Generating the decision Tree in png (see below)
 
-## Attribute information
-
-
-  
 ## Step by Step
 
 ```python
