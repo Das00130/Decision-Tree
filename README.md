@@ -102,7 +102,7 @@ plt.show()
 
 ## About Used Dataset (Reference)
 
-Attributes  
+#### Attributes  
 1. Sample code number:            100003
 2. Clump Thickness:               1 - 10
 3. Uniformity of Cell Size:       1 - 10
